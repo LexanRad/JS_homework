@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	'use strict';
+
+
+	function plus(num1, num2) {
+		return num1 + num2;
+	};
+
+
+	function minus(num1, num2) {
+		return num1 - num2;
+	};
+
+
+	function mul(num1, num2) {
+		return num1 * num2;
+	};
+
+
+	function div(num1, num2) {
+		return num1 / num2;
+	};
+
+
+	let a = prompt('Введите первое число:'), b = prompt('Введите второе число:');
+	let c = prompt('Введите действие (+, -, *, /), которое хотите сделать с ними:');
+	if (c === '+') {
+		alert('Сумма чисел равна ' + plus(a, b));
+	} else if (c === '-') {
+		alert('Результат вычитания равен ' + minus(a, b));
+	} else if (c === '*') {
+		alert('Результат умножения равен ' + mul(a, b));
+	} else if (c === '/') {
+		alert('Результат деления равен ' + div(a, b));
+	};
+	</script>
+</body>
+</html>
